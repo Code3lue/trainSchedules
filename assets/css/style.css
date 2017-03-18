@@ -1,0 +1,20 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-image: url("../images/westeros.jpg");
+}
+
+#font {
+	font-family: 'Jim Nightshade', cursive;
+	text-align: center;
+}
+
+td {
+	opacity: 1.0;
+	color: red;
+	font-weight: 900;
+	font-family: 'Lobster Two', cursive
+
+}

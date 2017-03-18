@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css"> 
+	
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/darkly/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="assets/css/style.css"> 
+
+<!--jquery bootstrap-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<!--google fonts-->
+<link href="https://fonts.googleapis.com/css?family=Jim+Nightshade|Lobster+Two" rel="stylesheet">
+
+<!--firebase database -->
+<script src="https://www.gstatic.com/firebasejs/3.7.2/firebase.js"></script>
+
+<!--moment.js -->
+ <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+
+	<title>Westeros Train Schedule</title>
+</head>
+<body>
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+
+			<div class="jumbotron">
+				<div class="row">
+					<div class="col-md-12">
+  						<h1 id="font">Westeros Train Schedule</h1>
+  						<!--<button type="button" class="btn btn-warning">Refresh</button> -->
+ 					</div> <!--internal col-->
+ 				</div> <!--internal row-->
+
+ 
+			</div> <!--jumbo -->
+	</div> <!--outer col-->
+	</div> <!--row 1 -->
+<div class="row">
+<div class="col-md-4">
+<form>
+  <div class="form-group">
+    <label for="train-name">Train Name</label>
+    <input type="train" class="form-control" id="train-name" placeholder="">
+  </div>
+  <div class="form-group">
+    <label for="destination">Destination</label>
+    <input type="destination" class="form-control" id="destination" placeholder="">
+  </div>
+   <div class="form-group">
+    <label for="first-train-time">First Train Time (HH:mm - military time)</label>
+    <input type="first-train-time" class="form-control" id="first-train-time" placeholder="">
+  </div>
+   <div class="form-group">
+    <label for="frequency">Frequency (min)</label>
+    <input type="frequncy" class="form-control" id="frequency" placeholder="">
+  </div>
+  
+  <button type="submit" id="add-train-btn" class="btn btn-danger">Submit</button>
+</form>
+</div> <!--col left-->
+<div class="col-md-8">
+	<table class="table table-striped">
+	
+   <tr>
+    <th>Train Name</th>
+    <th>Destination</th> 
+    <th>Frequency (min)</th>
+    <th>Next Arrival</th>
+    <th>Minutes Away</th>
+  </tr>
+  <tr>
+    <td>Moutain Moon Circle</td>
+    <td>Vale of Arryn</td> 
+    <td>50</td>
+    <td>05:35 PM</td>
+    <td>10</td>
+  </tr>
+  <tr>
+    <td>Dorne Railway</td>
+    <td>Dorne</td> 
+    <td>94</td>
+    <td>09:40 PM</td>
+    <td>1000</td>
+  </tr>
+
+</table>
+
+
+
+</div><!--col right -->
+</div> <!--row 2-->
+</div> <!--container-->
+
+<script src="assets/javascript/app.js"></script>	
+</body>
+</html>
